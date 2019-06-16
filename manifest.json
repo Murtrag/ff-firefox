@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Ankii integrity",
+    "version": "1.0",
+
+    "permissions": [
+        "menus",
+        "activeTab",
+        "contextMenus"
+    ],
+    "description": "Adds easy way to create ankii cards",
+
+    "icons": {
+        "48": "icons/border-48.png"
+    },
+
+    "background": {
+        "scripts": ["main.js"]
+    }
+
+
+}
