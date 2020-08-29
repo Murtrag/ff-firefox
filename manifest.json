@@ -17,6 +17,7 @@
       ],
 
     "permissions": [
+        "tabs",
         "menus",
         "activeTab",
         "contextMenus"
@@ -24,9 +25,17 @@
     "description": "Adds easy way to create ankii cards",
 
     "icons": {
-        // "48": "icons/border-48.png"
+        "48": "icons/anki-48.png",
         "64": "icons/anki-64.png"
     },
+    "browser_action": {
+		"browser_style": true,
+		"default_popup": "popup/menu.html",
+	        "default_icon": {
+			"48": "icons/anki-48.png"
+				}
+      		  },
+
 
     "background": {
         "scripts": [

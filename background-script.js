@@ -18,10 +18,22 @@ browser.contextMenus.onClicked.addListener(function(info, tab) {
 
 	case "create-card":
         kwargs = {
-            "frontCard": frontCard,
-            "backCard": backCard
+		type: "open_card",
+		card: {
+		    frontCard: frontCard,
+		    backCard: backCard
+		}
         }
         browser.tabs.sendMessage(tab.id, kwargs);
 
     }
 })
+
+
+// function openPage() {
+// 	  browser.tabs.create({
+// 		      url: "https://developer.mozilla.org"
+// 		    });
+// }
+
+// browser.browserAction.onClicked.addListener(openPage);

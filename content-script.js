@@ -33,12 +33,18 @@ function createModal(frontCard, backCard){
 // 	  console.log("Message from the background script:");
 // });
 
-browser.runtime.onMessage.addListener(popUp);
+browser.runtime.onMessage.addListener(dispacher);
 
-function popUp(message) { 
-  console.log(message)
-  createModal(message.frontCard, message.backCard);
-   $('.modal').modal("show");
+function dispacher(message) { 
+	switch(message.type){
+		case "open_menu":
+			console.log('open_menu')
+			break;
+		case "open_card":
+			createModal(message.card.frontCard, message.card.backCard);
+			$('.modal').modal("show");
+			break;
+	}
   // setTimeout(function() {$('.modal').modal("show"); console.log("modal")}, 0);
 }
 
