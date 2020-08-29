@@ -1,9 +1,3 @@
-// head = head || '';
-// tail = tail || '';
-// head = typeof(head) == 'undefined' ? '' : head;
-// tail = typeof(tail) == 'undefined' ? '' : tail;
-
-
 let backCard = '';
 let frontCard = '';
 browser.contextMenus.onClicked.addListener(function(info, tab) {

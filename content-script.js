@@ -5,7 +5,7 @@ function createModal(frontCard, backCard){
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Modal title</h5>
+            <h5 class="modal-title">Add new card</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -29,7 +29,9 @@ function createModal(frontCard, backCard){
     }
 
 
-
+// browser.runtime.onMessage.addListener(request => {
+// 	  console.log("Message from the background script:");
+// });
 
 browser.runtime.onMessage.addListener(popUp);
 
@@ -39,3 +41,4 @@ function popUp(message) {
    $('.modal').modal("show");
   // setTimeout(function() {$('.modal').modal("show"); console.log("modal")}, 0);
 }
+

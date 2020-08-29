@@ -6,11 +6,9 @@
         {
           "matches": ["https://www.diki.pl/*"],
           "js": [            
+            "content-script.js",
             "bootstrap/jquery-3.3.1.slim.min.js",
-            "bootstrap/bootstrap.min.js",
-            // "incjections.js",         
-            // "bootstrap/popper.min.js",                        
-            "confirm.js"
+            "bootstrap/bootstrap.min.js"
         ],
           "css": [
             "bootstrap/bootstrap.min.css"
@@ -33,9 +31,8 @@
         "scripts": [
             "bootstrap/jquery-3.3.1.slim.min.js",
             "menu.js", 
-            "engine.js", 
-            "utils.js", 
-            "confirm.js"
+            "background-script.js", 
+            "utils.js" 
 
         ]
     }
