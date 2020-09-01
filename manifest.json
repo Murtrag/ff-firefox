@@ -6,9 +6,12 @@
         {
           "matches": ["https://www.diki.pl/*"],
           "js": [            
-            "content-script.js",
             "bootstrap/jquery-3.3.1.slim.min.js",
-            "bootstrap/bootstrap.min.js"
+	    "manager-event-hander.js",
+            "bootstrap/bootstrap.min.js",
+	    "page/modal.js",
+	    "page/manager.js",
+            "content-script.js"
         ],
           "css": [
             "bootstrap/bootstrap.min.css"
